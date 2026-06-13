@@ -1,0 +1,188 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#fff8f8;
+color:#555;
+overflow-x:hidden;
+}
+
+section{
+padding:80px 20px;
+}
+
+h1,h2{
+font-family:'Dancing Script',cursive;
+}
+
+.opening{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ffe4ec,#fff6ef);
+}
+
+.opening-card{
+background:white;
+padding:50px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.opening-card h1{
+font-size:4rem;
+}
+
+button{
+padding:15px 30px;
+border:none;
+border-radius:30px;
+background:#ff8fb1;
+color:white;
+cursor:pointer;
+margin-top:20px;
+}
+
+.hero{
+text-align:center;
+}
+
+.hero img{
+width:300px;
+height:300px;
+border-radius:50%;
+object-fit:cover;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.hero h1{
+font-size:4rem;
+margin-top:20px;
+}
+
+.timeline{
+max-width:800px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.item{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.scrapbook h2,
+.story h2,
+.reasons h2,
+.letter h2{
+text-align:center;
+margin-bottom:40px;
+font-size:3rem;
+}
+
+.photos{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.photo{
+width:260px;
+background:white;
+padding:12px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.photo img{
+width:100%;
+border-radius:10px;
+}
+
+.photo span{
+display:block;
+text-align:center;
+margin-top:10px;
+}
+
+.rotate-left{
+transform:rotate(-3deg);
+}
+
+.rotate-right{
+transform:rotate(3deg);
+}
+
+#reasonContainer{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.reason-card{
+background:white;
+padding:20px;
+border-radius:20px;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.envelope{
+max-width:400px;
+margin:auto;
+background:#ffbfd2;
+padding:40px;
+text-align:center;
+border-radius:20px;
+cursor:pointer;
+}
+
+.letter-content{
+display:none;
+max-width:800px;
+margin:30px auto;
+background:white;
+padding:30px;
+border-radius:20px;
+line-height:2;
+}
+
+.ending{
+text-align:center;
+background:#ffe8ef;
+}
+
+#hugResult{
+margin-top:20px;
+font-size:2rem;
+}
+
+@media(max-width:768px){
+
+.hero img{
+width:220px;
+height:220px;
+}
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.opening-card h1{
+font-size:2.8rem;
+}
+
+}
