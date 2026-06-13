@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Simanis ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Quicksand',sans-serif;
+    background:#fff7f7;
+    color:#444;
+    overflow-x:hidden;
+}
+
+section{
+    min-height:100vh;
+    padding:60px 20px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+h1,h2{
+    font-family:'Patrick Hand',cursive;
+}
+
+.btn{
+    background:#ff7aa2;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.hero{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(
+    135deg,
+    #ffd6e7,
+    #fff4d6
+    );
+}
+
+.hero h1{
+    font-size:4rem;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:1.2rem;
+}
+
+.cover-img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:25px;
+    margin-bottom:25px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:3rem;
+}
+
+.message{
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    line-height:1.8;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.polaroid{
+    background:white;
+    padding:12px;
+    border-radius:15px;
+    box-shadow:0 8px 15px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.polaroid:hover{
+    transform:rotate(3deg) scale(1.05);
+}
+
+.polaroid img{
+    width:100%;
+    border-radius:10px;
+}
+
+.caption{
+    text-align:center;
+    padding-top:10px;
+    font-weight:bold;
+}
+
+.reason-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.reason{
+    background:#fff;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 5px 10px rgba(0,0,0,.08);
+}
+
+.letter{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    line-height:2;
+}
+
+.footer{
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:#ffe7f0;
+}
+
+.footer h1{
+    font-size:4rem;
+}
+
+.hug{
+    margin-top:20px;
+    font-size:2rem;
+}
+
+.floating-heart{
+    position:fixed;
+    color:pink;
+    font-size:20px;
+    animation:float 6s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-100px);
+        opacity:0;
+    }
+}
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.timeline-item{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.title{
+font-size:2rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<img src="assets/cover.jpg" class="cover-img">
+
+<h1>🎂 Happy Birthday Simanis ❤️</h1>
+
+<p>
+Selamat ulang tahun yang ke-27 🎉
+</p>
+
+<button class="btn" onclick="startSurprise()">
+🎁 Buka Hadiah
+</button>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="title">💌 Untuk Simanis</h2>
+
+<div class="message">
+
+Hai Simanis ❤️
+
+<br><br>
+
+Hari ini adalah hari yang spesial,
+karena 27 tahun yang lalu lahir seseorang yang nantinya akan membuat hidupku menjadi lebih berwarna.
+
+<br><br>
+
+Terima kasih sudah hadir dalam hidupku.
+
+<br><br>
+
+Semoga semua hal baik selalu datang menghampirimu.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="title">📖 Perjalanan Kita</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+❤️ [Tanggal Kenal]
+</div>
+
+<div class="timeline-item">
+☕ [First Date]
+</div>
+
+<div class="timeline-item">
+💕 [Mulai Jadian]
+</div>
+
+<div class="timeline-item">
+🌸 [Momen Favorit]
+</div>
+
+<div class="timeline-item">
+✨ [Cerita yang Ingin Kamu Tambahkan]
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="title">📸 Scrapbook Kita</h2>
+
+<div class="gallery">
+
+<div class="polaroid">
+<img src="assets/photo1.jpg">
+<div class="caption">Momen 1</div>
+</div>
+
+<div class="polaroid">
+<img src="assets/photo2.jpg">
+<div class="caption">Momen 2</div>
+</div>
+
+<div class="polaroid">
+<img src="assets/photo3.jpg">
+<div class="caption">Momen 3</div>
+</div>
+
+<div class="polaroid">
+<img src="assets/photo4.jpg">
+<div class="caption">Momen 4</div>
+</div>
+
+<div class="polaroid">
+<img src="assets/photo5.jpg">
+<div class="caption">Momen 5</div>
+</div>
+
+<div class="polaroid">
+<img src="assets/photo6.jpg">
+<div class="caption">Momen 6</div>
+</div>
+
+<div class="polaroid">
+<img src="assets/photo7.jpg">
+<div class="caption">Momen 7</div>
+</div>
+
+<div class="polaroid">
+<img src="assets/photo8.jpg">
+<div class="caption">Momen 8</div>
+</div>
+
+<div class="polaroid">
+<img src="assets/photo9.jpg">
+<div class="caption">Momen 9</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="title">❤️ 27 Alasan Aku Bersyukur Ada Kamu</h2>
+
+<div class="reason-grid" id="reasons"></div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="title">💌 Surat Rahasia</h2>
+
+<div class="letter">
+
+Hai Simanis ❤️
+
+<br><br>
+
+[ CERITA AWAL KITA ]
+
+<br><br>
+
+[ MOMEN FAVORIT KITA ]
+
+<br><br>
+
+[ HAL YANG AKU SUKAI DARI KAMU ]
+
+<br><br>
+
+[ HARAPAN UNTUK HUBUNGAN KITA ]
+
+<br><br>
+
+Terima kasih untuk semua tawa,
+cerita,
+perhatian,
+dan kenangan yang sudah kita lalui bersama.
+
+<br><br>
+
+Happy Birthday ❤️
+
+</div>
+
+</div>
+
+</section>
+
+<section class="footer">
+
+<h1>🌙✨</h1>
+
+<h2>Happy Birthday Simanis ❤️</h2>
+
+<p style="margin-top:20px;">
+Semoga hari ini seindah senyummu.
+</p>
+
+<button class="btn" onclick="hug()">
+🤗 Peluk Virtual
+</button>
+
+<div class="hug" id="hug"></div>
+
+</section>
+
+<script>
+
+function startSurprise(){
+
+confetti({
+particleCount:250,
+spread:180,
+origin:{y:0.6}
+});
+
+window.scrollTo({
+top:window.innerHeight,
+behavior:'smooth'
+});
+
+}
+
+function hug(){
+
+document.getElementById("hug").innerHTML=
+"🤗🤗🤗🤗🤗<br>Sending unlimited hugs to Simanis ❤️";
+
+confetti({
+particleCount:150,
+spread:120
+});
+
+}
+
+const reasons = [
+
+"Karena senyummu",
+"Karena perhatianmu",
+"Karena kebaikanmu",
+"Karena kesabaranmu",
+"Karena dukunganmu",
+"Karena kamu lucu",
+"Karena kamu kuat",
+"Karena kamu tulus",
+"Karena kamu selalu ada",
+"Karena kamu spesial",
+"Karena kamu unik",
+"Karena kamu bikin nyaman",
+"Karena kamu bikin tenang",
+"Karena kamu bikin bahagia",
+"Karena kamu cantik",
+"Karena kamu mengerti",
+"Karena kamu peduli",
+"Karena kamu pekerja keras",
+"Karena kamu cerdas",
+"Karena kamu perhatian",
+"Karena kamu penyayang",
+"Karena kamu berharga",
+"Karena kamu hebat",
+"Karena kamu luar biasa",
+"Karena kamu rumah",
+"Karena kamu Simanis",
+"Karena aku bersyukur memilikimu"
+
+];
+
+const reasonContainer =
+document.getElementById("reasons");
+
+reasons.forEach((reason,index)=>{
+
+reasonContainer.innerHTML += `
+<div class="reason">
+<b>${index+1}.</b> ${reason}
+</div>
+`;
+
+});
+
+setInterval(()=>{
+
+const heart=document.createElement("div");
+
+heart.classList.add("floating-heart");
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=
+(Math.random()*20+15)+"px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+
+},500);
+
+</script>
+
+</body>
+</html>
