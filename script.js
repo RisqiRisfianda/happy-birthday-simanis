@@ -13,21 +13,21 @@ behavior:"smooth"
 
 }
 
-function openLetter(){
-
-const envelope =
-document.getElementById("envelope");
-
-const letter =
-document.getElementById("letter");
-
-envelope.classList.add("open");
-
-setTimeout(()=>{
-
-letter.classList.add("show");
-
-},700);
+    function openLetter(){
+    
+    const envelope =
+    document.getElementById("envelope");
+    
+    const letter =
+    document.getElementById("letter");
+    
+    envelope.classList.add("open");
+    
+    setTimeout(()=>{
+    
+    letter.classList.add("show");
+    
+    },700);
 
 }
 
