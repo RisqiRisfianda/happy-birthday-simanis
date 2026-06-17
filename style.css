@@ -185,11 +185,25 @@ perspective:1000px;
 .body{
 position:absolute;
 bottom:0;
-width:100%;
-height:140px;
-background:#ffc5d8;
+width:300px;
+height:180px;
+background:#ffd4e5;
 border-radius:10px;
-z-index:2;
+overflow:hidden;
+}
+
+.body::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+
+width:0;
+height:0;
+
+border-left:150px solid transparent;
+border-right:150px solid transparent;
+border-bottom:90px solid #ffb2cc;
 }
 
 .flap{
@@ -206,7 +220,7 @@ z-index:3;
 
 .heart{
 position:absolute;
-top:55px;
+top:80px;
 left:50%;
 transform:translateX(-50%);
 font-size:2rem;
