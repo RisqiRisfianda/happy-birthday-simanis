@@ -15,6 +15,10 @@ behavior:"smooth"
 
 function openLetter(){
 
+document
+.getElementById("letter")
+.classList.add("show");
+
 const envelope =
 document.getElementById("envelope");
 
