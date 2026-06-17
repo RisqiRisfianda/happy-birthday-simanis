@@ -176,8 +176,8 @@ margin-bottom:30px;
 
 .envelope{
 position:relative;
-width:260px;
-height:180px;
+width:300px;
+height:200px;
 cursor:pointer;
 perspective:1000px;
 }
@@ -196,7 +196,7 @@ z-index:2;
 position:absolute;
 top:0;
 width:100%;
-height:100px;
+height:80px;
 background:#ff9fbd;
 clip-path:polygon(0 0,100% 0,50% 100%);
 transform-origin:top;
