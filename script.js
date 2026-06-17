@@ -49,7 +49,7 @@ function sendHug(){
 document
 .getElementById("hugResult")
 .innerHTML=
-"❤️❤️❤️❤️❤️<br>Sending unlimited hugs to Simanis 🤗";
+"❤️❤️❤️❤️❤️<br>Peluk dan cium yang tak hingga buat kamu 🤗😘";
 
 confetti({
 particleCount:150,
