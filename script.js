@@ -15,13 +15,27 @@ behavior:"smooth"
 
 function openLetter(){
 
-document
-.getElementById("letter")
-.style.display="block";
+const envelope =
+document.getElementById("envelope");
+
+const letter =
+document.getElementById("letter");
+
+envelope.classList.add("open");
+
+setTimeout(()=>{
+
+letter.classList.add("show");
+
+},700);
 
 }
 
-function sendHug(){
+function revealReason(card){
+
+card.classList.toggle("flip");
+
+}
 
 document
 .getElementById("hugResult")
