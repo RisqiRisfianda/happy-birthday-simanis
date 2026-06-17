@@ -31,11 +31,7 @@ function openLetter(){
 
 }
 
-function revealReason(card){
-
-card.classList.toggle("flip");
-
-}
+function sendHug(){
 
 document
 .getElementById("hugResult")
@@ -48,60 +44,6 @@ spread:120
 });
 
 }
-
-const reasons = [
-
-"Karena senyummu",
-"Karena perhatianmu",
-"Karena kamu selalu ada",
-"Karena kamu baik",
-"Karena kamu lucu",
-"Karena kamu cantik",
-"Karena kamu sabar",
-"Karena kamu tulus",
-"Karena kamu kuat",
-"Karena kamu hebat",
-"Karena kamu spesial",
-"Karena kamu unik",
-"Karena kamu manis",
-"Karena kamu pengertian",
-"Karena kamu perhatian",
-"Karena kamu bikin nyaman",
-"Karena kamu bikin tenang",
-"Karena kamu bikin bahagia",
-"Karena kamu rumah",
-"Karena kamu penyayang",
-"Karena kamu pekerja keras",
-"Karena kamu pintar",
-"Karena kamu peduli",
-"Karena kamu menginspirasiku",
-"Karena kamu berharga",
-"Karena aku bersyukur memilikimu",
-"Karena kamu adalah Simanis ❤️"
-
-];
-
-const container =
-document.getElementById("reasonContainer");
-
-reasons.forEach((item,index)=>{
-
-const card =
-document.createElement("div");
-
-card.className =
-"reason-card";
-
-card.innerHTML =
-`❤️ Reason #${index+1}`;
-
-card.onclick = () => {
-card.innerHTML = item;
-};
-
-container.appendChild(card);
-
-});
 
 setInterval(()=>{
 
