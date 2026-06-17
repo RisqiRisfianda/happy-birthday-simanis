@@ -13,7 +13,7 @@ behavior:"smooth"
 
 }
 
-    function openLetter(){
+function openLetter(){
     
     const envelope =
     document.getElementById("envelope");
