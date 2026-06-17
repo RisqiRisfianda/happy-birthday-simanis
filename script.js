@@ -14,20 +14,29 @@ behavior:"smooth"
 }
 
 function openLetter(){
-    
-    const envelope =
-    document.getElementById("envelope");
-    
-    const letter =
-    document.getElementById("letter");
-    
-    envelope.classList.add("open");
-    
-    setTimeout(()=>{
-    
-    letter.classList.add("show");
-    
-    },700);
+
+const envelope =
+document.getElementById("envelope");
+
+const letter =
+document.getElementById("letter");
+
+const paper =
+document.getElementById("paper");
+
+envelope.classList.add("open");
+
+setTimeout(()=>{
+
+paper.classList.add("show");
+
+},300);
+
+setTimeout(()=>{
+
+letter.classList.add("show");
+
+},1200);
 
 }
 
