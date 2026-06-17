@@ -63,12 +63,25 @@ setInterval(()=>{
 const heart =
 document.createElement("div");
 
-heart.innerHTML="❤️";
+const emojis = [
+"❤️",
+"😘",
+"🥰",
+"🤗"
+];
+
+heart.innerHTML =
+emojis[
+Math.floor(
+Math.random() * emojis.length
+)
+];
 
 heart.style.position="fixed";
 heart.style.left=Math.random()*100+"vw";
 heart.style.bottom="-50px";
-heart.style.fontSize="20px";
+heart.style.fontSize =
+(18 + Math.random()*20) + "px";
 
 heart.animate([
 {transform:'translateY(0)'},
