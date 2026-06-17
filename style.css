@@ -167,49 +167,6 @@ font-size:2.8rem;
 
 }
 
-.reason-container{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:30px;
-}
-
-.reason-card{
-width:280px;
-height:180px;
-position:relative;
-cursor:pointer;
-}
-
-.reason-card .front,
-.reason-card .back{
-position:absolute;
-width:100%;
-height:100%;
-border-radius:20px;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:white;
-box-shadow:0 8px 20px rgba(0,0,0,.08);
-transition:.6s;
-backface-visibility:hidden;
-}
-
-.reason-card .back{
-transform:rotateY(180deg);
-}
-
-.reason-card.flip .front{
-transform:rotateY(180deg);
-}
-
-.reason-card.flip .back{
-transform:rotateY(360deg);
-}
-
 .envelope-wrapper{
 display:flex;
 justify-content:center;
