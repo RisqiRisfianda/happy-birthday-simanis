@@ -46,14 +46,20 @@ letter.classList.add("show");
 
 function sendHug(){
 
-document
-.getElementById("hugResult")
-.innerHTML=
+const hugResult =
+document.getElementById("hugResult");
+
+hugResult.innerHTML =
 "❤️❤️❤️❤️❤️<br>Peluk dan cium yang tak hingga buat kamu 🤗😘";
 
 confetti({
 particleCount:150,
 spread:120
+});
+
+hugResult.scrollIntoView({
+behavior:"smooth",
+block:"center"
 });
 
 }
